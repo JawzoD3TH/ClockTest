@@ -15,6 +15,7 @@ namespace ClockTest
         
         static void Main(string[] args)
         {
+            Console.WriteLine("--- Testing Parallelism ---");
             timer.Elapsed += new ElapsedEventHandler(Timer_Elapsed);
             timer.Enabled = true;
             while (timer.Enabled)
@@ -36,6 +37,7 @@ namespace ClockTest
             DateTimes.Clear();
             timer.Close();
             timer.Dispose();
+            Console.WriteLine("Press any key to quit.");
             Console.ReadKey();
         }
 
