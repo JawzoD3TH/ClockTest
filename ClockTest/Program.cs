@@ -7,7 +7,6 @@ namespace ClockTest
 {
     class Program
     {
-        const char Period = '.';
         const int Time = 8500;
         const int Timezone = 2;
         static Timer timer = new Timer(Time);
